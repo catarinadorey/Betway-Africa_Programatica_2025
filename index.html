@@ -3,261 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Betway Africa 2025 | Deep Dive Report</title>
+    <title>Betway Africa 2025 | Relatório Programático</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root { --betway-green: #00ff5f; }
         .bg-betway-dark { background-color: #0b0b0b; }
-        .card { background: #1a1a1a; border: 1px solid #333; border-radius: 12px; }
+        .card { background: #181818; border: 1px solid #2d2d2d; border-radius: 12px; }
         .accent-green { color: var(--betway-green); }
-        .border-green { border-color: var(--betway-green); }
-        .gradient-waste { background: linear-gradient(90deg, #3b0a0a 0%, #1a1a1a 100%); }
+        .status-pill { padding: 2px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: bold; }
+        .warning-strip { background: repeating-linear-gradient(45deg, #2a2a2a, #2a2a2a 10px, #1a1a1a 10px, #1a1a1a 20px); }
     </style>
 </head>
-<body class="bg-betway-dark text-gray-200 font-sans leading-relaxed">
+<body class="bg-betway-dark text-gray-300 font-sans">
 
-    <nav class="p-6 border-b border-gray-800 flex flex-col md:flex-row justify-between items-center sticky top-0 bg-betway-dark/95 backdrop-blur-md z-50">
-        <div class="text-2xl font-black tracking-tighter text-white mb-4 md:mb-0">
-            BETWAY <span class="accent-green">AFRICA</span> <span class="text-xs font-light ml-2 text-gray-500 uppercase tracking-widest text-sm">Programmatic 2025</span>
-        </div>
-        <div class="flex space-x-4 text-xs uppercase font-bold">
-            <a href="#summary" class="hover:text-green-400">Resumo</a>
-            <a href="#tracking" class="hover:text-green-400">Tracking</a>
-            <a href="#geo" class="hover:text-green-400">Geografias</a>
-            <a href="#whitelist" class="hover:text-green-400">Whitelists</a>
-        </div>
+    <nav class="p-6 border-b border-gray-800 flex justify-between items-center sticky top-0 bg-betway-dark/95 backdrop-blur-md z-50">
+        <div class="text-xl font-black text-white italic">BETWAY <span class="accent-green">AFRICA</span></div>
+        <div class="text-[10px] uppercase tracking-[0.2em] font-bold text-gray-500 hidden md:block">Programmatic In-App Analysis 2025</div>
     </nav>
 
-    <main class="max-w-7xl mx-auto p-4 md:p-8">
-
-        <section id="summary" class="mb-12">
-            <div class="flex items-center space-x-3 mb-6">
-                <div class="h-8 w-1 bg-green-500"></div>
-                <h2 class="text-3xl font-bold text-white italic uppercase">1. Executive Summary</h2>
-            </div>
+    <main class="max-w-7xl mx-auto p-6">
+        
+        <header class="mb-12">
+            <h1 class="text-4xl font-black text-white mb-4 uppercase italic">Performance Report 2025</h1>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <div class="lg:col-span-2 card p-8">
-                    <p class="text-lg mb-4">O desempenho global em 2025 foi marcado por dois períodos distintos: a <span class="text-white font-semibold">Fase de Exploração</span> e a <span class="accent-green font-semibold">Fase de Otimização Pós-Tracking (6 de agosto)</span>.</p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                        <div class="bg-black/40 p-4 rounded-lg">
-                            <h4 class="text-green-400 font-bold mb-2"><i class="fas fa-check-circle mr-2"></i>Motor de Conversão</h4>
-                            <p class="text-sm italic">O iOS demonstrou ser o motor principal, com a África do Sul a manter uma operação estável e monitorizável desde o início.</p>
-                        </div>
-                        <div class="bg-black/40 p-4 rounded-lg">
-                            <h4 class="text-red-400 font-bold mb-2"><i class="fas fa-exclamation-triangle mr-2"></i>Desafio Crítico</h4>
-                            <p class="text-sm italic">Atribuição nula em Android e investimento perdido em geografias sem tracking antes de 6 de agosto.</p>
-                        </div>
-                    </div>
+                <div class="lg:col-span-2 card p-6">
+                    <h2 class="text-sm font-bold text-green-400 uppercase mb-4 tracking-widest italic">1. Resumo Executivo</h2>
+                    <p class="text-lg leading-relaxed text-gray-200">
+                        Análise das campanhas <span class="text-white font-bold italic">Kayzen/DV360</span>[cite: 1]. 
+                        O ano foi dividido pela fase de exploração e pela <span class="accent-green underline">otimização pós-6 de agosto</span>, quando o tracking de conversões ficou ativo[cite: 3].
+                        O <span class="text-white font-bold italic">iOS</span> foi o motor de conversões, enquanto o <span class="text-red-500 font-bold">Android</span> enfrentou falhas críticas de atribuição[cite: 4, 5].
+                    </p>
                 </div>
-                <div class="card p-8 gradient-waste border-red-900/50">
-                    <h3 class="text-red-400 uppercase text-xs font-black tracking-widest mb-2">Investimento de Aprendizagem / Desperdiçado</h3>
-                    <div class="text-5xl font-black text-white mb-2">7.111€</div>
-                    <p class="text-xs text-gray-400 leading-tight">Soma de Android (4.311€) + iOS Pré-Tracking (2.800€). Capital sem dados acionáveis.</p>
-                    <div class="mt-6 h-2 bg-gray-800 rounded-full overflow-hidden">
-                        <div class="h-full bg-red-600" style="width: 100%"></div>
-                    </div>
+                <div class="card p-6 warning-strip border-red-900/50">
+                    <h3 class="text-red-500 text-xs font-black uppercase mb-2">Desperdício de Orçamento</h3>
+                    <div class="text-4xl font-black text-white">7.111€</div>
+                    <p class="text-[11px] mt-2 leading-tight uppercase font-bold text-gray-400">
+                        Android (4.311€) [cite: 11] + <br>iOS Pré-Tracking (~2.800€) [cite: 26]
+                    </p>
+                    <p class="text-[10px] mt-4 italic text-red-400">"Investimento de aprendizagem sem dados acionáveis"[cite: 6].</p>
                 </div>
             </div>
-        </section>
+        </header>
 
-        <section id="tracking" class="mb-12">
-            <div class="flex items-center space-x-3 mb-6">
-                <div class="h-8 w-1 bg-green-500"></div>
-                <h2 class="text-3xl font-bold text-white italic uppercase">2. OS & Tracking Attribution</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section class="mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-6 italic uppercase">2. Análise por Sistema Operativo [cite: 7, 8]</h2>
+                    <div class="space-y-4">
+                        <div class="card p-4 border-l-4 border-green-500">
+                            <h4 class="font-bold text-white italic">iOS: Performance Core</h4>
+                            <p class="text-xs">Responsável pela 100% das conversões rastreadas[cite: 9].</p>
+                            <p class="text-xs mt-1 text-gray-500">Sul da África atingiu 67M+ de impressões com CPP de 44.93€ (Target 40€)[cite: 12].</p>
+                        </div>
+                        <div class="card p-4 border-l-4 border-red-500">
+                            <h4 class="font-bold text-white italic text-red-500">Android: Atribuição Nula</h4>
+                            <p class="text-xs">100% ineficiente devido a falha no tracking da marca[cite: 5, 10].</p>
+                            <p class="text-xs mt-1 text-gray-500 italic text-red-400">Zero FTDs registados em Ghana, Nigéria e Tanzânia[cite: 11].</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="card p-6">
-                    <h3 class="text-xl font-bold mb-6 italic border-b border-gray-800 pb-2 uppercase">Eficiência de Volume (Impressões)</h3>
-                    <canvas id="impressionChart" height="200"></canvas>
-                    <p class="mt-4 text-xs text-gray-500 italic text-center">África do Sul lidera escala com 67M+ de impressões em iOS.</p>
-                </div>
-                <div class="space-y-6">
-                    <div class="card p-6 border-l-4 border-green-500">
-                        <h4 class="font-bold text-white uppercase tracking-wider mb-2">iOS (Performance Core)</h4>
-                        <p class="text-sm text-gray-400">Único canal com ROI comprovado. Responsável pela totalidade das conversões rastreadas. Melhoria significativa após ajuste técnico.</p>
-                    </div>
-                    <div class="card p-6 border-l-4 border-red-500">
-                        <h4 class="font-bold text-white uppercase tracking-wider mb-2">Android (Atribuição Nula)</h4>
-                        <p class="text-sm text-gray-400 italic">"100% do investimento atual em Android é ineficiente". Investimento consumido em Ghana, Nigéria e Tanzânia sem registo de FTDs na plataforma.</p>
-                    </div>
+                    <canvas id="osChart" height="200"></canvas>
                 </div>
             </div>
         </section>
 
-        <section id="geo" class="mb-12">
-            <div class="flex items-center space-x-3 mb-6">
-                <div class="h-8 w-1 bg-green-500"></div>
-                <h2 class="text-3xl font-bold text-white italic uppercase">3. Geographic Performance vs Target</h2>
-            </div>
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-white mb-6 italic uppercase">3. Performance Geográfica vs Target (iOS Útil) [cite: 19, 20]</h2>
             <div class="card overflow-hidden">
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left">
-                        <thead class="bg-black text-gray-400 uppercase text-xs">
-                            <tr>
-                                <th class="p-4">Geografia</th>
-                                <th class="p-4">Investimento Útil</th>
-                                <th class="p-4 text-center">FTDs</th>
-                                <th class="p-4">CPP Atual</th>
-                                <th class="p-4">Target (Max)</th>
-                                <th class="p-4">Status / Gap</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-800">
-                            <tr>
-                                <td class="p-4 font-bold text-white">South Africa</td>
-                                <td class="p-4 italic text-gray-400 italic">33.379,57€</td>
-                                <td class="p-4 text-center font-bold accent-green text-lg">743</td>
-                                <td class="p-4">44,93€</td>
-                                <td class="p-4">40,00€</td>
-                                <td class="p-4"><span class="bg-yellow-900/30 text-yellow-500 px-3 py-1 rounded-full text-[10px] font-bold">AJUSTAR (-11%)</span></td>
-                            </tr>
-                            <tr class="bg-green-900/5">
-                                <td class="p-4 font-bold text-white">Ghana</td>
-                                <td class="p-4 italic text-gray-400">5.408,55€</td>
-                                <td class="p-4 text-center font-bold accent-green text-lg">441</td>
-                                <td class="p-4 font-bold text-red-500">12,26€</td>
-                                <td class="p-4">5,00€</td>
-                                <td class="p-4"><span class="bg-red-900/30 text-red-500 px-3 py-1 rounded-full text-[10px] font-bold">FORA DO TARGET</span></td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 font-bold text-white">Tanzania</td>
-                                <td class="p-4 italic text-gray-400">1.196,53€</td>
-                                <td class="p-4 text-center font-bold accent-green text-lg">135</td>
-                                <td class="p-4">8,86€</td>
-                                <td class="p-4">5,00€</td>
-                                <td class="p-4"><span class="bg-yellow-900/30 text-yellow-500 px-3 py-1 rounded-full text-[10px] font-bold">AJUSTAR (-43%)</span></td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 font-bold text-white text-opacity-60">Mozambique</td>
-                                <td class="p-4 italic text-gray-500">152,69€</td>
-                                <td class="p-4 text-center">3</td>
-                                <td class="p-4 text-gray-500">50,90€</td>
-                                <td class="p-4">20,00€</td>
-                                <td class="p-4"><span class="text-red-700 text-[10px] font-bold italic underline decoration-red-900">FORA DO TARGET</span></td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 font-bold text-white text-opacity-60 text-opacity-60">Nigeria</td>
-                                <td class="p-4 italic text-gray-500">671,82€</td>
-                                <td class="p-4 text-center">1</td>
-                                <td class="p-4 text-red-500">671,82€</td>
-                                <td class="p-4">20,00€</td>
-                                <td class="p-4"><span class="bg-red-600 text-white px-3 py-1 rounded-full text-[10px] font-bold uppercase">CRÍTICO</span></td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 font-bold text-white text-opacity-40">Zambia / Malawi</td>
-                                <td class="p-4 italic text-gray-500">200,93€</td>
-                                <td class="p-4 text-center">0</td>
-                                <td class="p-4">N/A</td>
-                                <td class="p-4">20,00€</td>
-                                <td class="p-4 text-gray-600 text-[10px] italic">SEM CONVERSÃO / VOL. BAIXO</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <table class="w-full text-left text-sm">
+                    <thead class="bg-black/50 text-gray-400 uppercase text-[10px]">
+                        <tr>
+                            <th class="p-4 text-white">Geografia</th>
+                            <th class="p-4">Investimento Útil</th>
+                            <th class="p-4">FTDs</th>
+                            <th class="p-4">CPP Atual</th>
+                            <th class="p-4 text-green-400 font-black">Target</th>
+                            <th class="p-4 text-center">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-800">
+                        <tr>
+                            <td class="p-4 font-bold text-white">South Africa [cite: 21]</td>
+                            <td class="p-4 italic">33.379,57€</td>
+                            <td class="p-4 font-bold">743</td>
+                            <td class="p-4 font-bold">44,93€</td>
+                            <td class="p-4">40,00€</td>
+                            <td class="p-4 text-center"><span class="status-pill bg-yellow-900/40 text-yellow-500">AJUSTAR (-11%) [cite: 23]</span></td>
+                        </tr>
+                        <tr class="bg-green-500/5">
+                            <td class="p-4 font-bold text-white">Ghana [cite: 21]</td>
+                            <td class="p-4 italic text-gray-500">5.408,55€</td>
+                            <td class="p-4 font-bold">441</td>
+                            <td class="p-4 text-red-500 font-bold">12,26€</td>
+                            <td class="p-4">5,00€</td>
+                            <td class="p-4 text-center"><span class="status-pill bg-red-900 text-red-200 uppercase">Fora Target [cite: 25]</span></td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-white">Tanzania [cite: 21]</td>
+                            <td class="p-4 italic text-gray-500">1.196,53€</td>
+                            <td class="p-4 font-bold">135</td>
+                            <td class="p-4 font-bold">8,86€</td>
+                            <td class="p-4">5,00€</td>
+                            <td class="p-4 text-center"><span class="status-pill bg-yellow-900/40 text-yellow-500 uppercase">Ajustar (-43%)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">Mozambique [cite: 21]</td>
+                            <td class="p-4 italic text-gray-500">152,69€</td>
+                            <td class="p-4 font-bold">3</td>
+                            <td class="p-4">50,90€</td>
+                            <td class="p-4">20,00€</td>
+                            <td class="p-4 text-center text-red-900 font-black italic">TARGET EXCEDIDO</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">Nigeria [cite: 21]</td>
+                            <td class="p-4 italic text-gray-500">671,82€</td>
+                            <td class="p-4 font-bold text-red-500 text-lg">1</td>
+                            <td class="p-4 text-red-500 font-bold">671,82€</td>
+                            <td class="p-4 text-green-400">20,00€</td>
+                            <td class="p-4 text-center"><span class="status-pill bg-red-600 text-white uppercase">Crítico [cite: 27]</span></td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">Zambia [cite: 21]</td>
+                            <td class="p-4 italic text-gray-500">126,04€</td>
+                            <td class="p-4">0</td>
+                            <td class="p-4 italic">N/A</td>
+                            <td class="p-4">20,00€</td>
+                            <td class="p-4 text-center italic text-gray-600">Sem Conversão</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-white mb-6 italic uppercase">4. Top Apps & Inventário [cite: 13, 14]</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                <div class="card p-4 bg-black/40">
+                    <h3 class="text-white font-bold mb-3 border-b border-gray-800 pb-2">South Africa [cite: 15]</h3>
+                    <div class="space-y-2 text-[11px]">
+                        <div class="flex justify-between"><span>Block Blast!</span> <span class="accent-green font-bold">93 FTDs</span></div>
+                        <div class="flex justify-between"><span>ESP - Loadshedding</span> <span class="accent-green font-bold">103 FTDs*</span></div>
+                        <div class="flex justify-between italic text-gray-500"><span>(Kayzen + DV360)</span></div>
+                        <div class="flex justify-between"><span>SHAREit: Transfer</span> <span class="font-bold">59 FTDs</span></div>
+                    </div>
+                </div>
+                <div class="card p-4 bg-black/40">
+                    <h3 class="text-white font-bold mb-3 border-b border-gray-800 pb-2">Ghana [cite: 16]</h3>
+                    <div class="space-y-2 text-[11px]">
+                        <div class="flex justify-between"><span>Audiomack</span> <span class="accent-green font-bold">357 FTDs</span></div>
+                        <div class="flex justify-between"><span>Flashscore</span> <span class="accent-green font-bold">270 FTDs</span></div>
+                        <div class="flex justify-between"><span>LiveScore</span> <span class="accent-green font-bold">51 FTDs</span></div>
+                        <div class="flex justify-between"><span>Sofascore</span> <span class="accent-green font-bold">40 FTDs</span></div>
+                    </div>
+                </div>
+                <div class="card p-4 bg-black/40">
+                    <h3 class="text-white font-bold mb-3 border-b border-gray-800 pb-2">Tanzania [cite: 16]</h3>
+                    <div class="space-y-2 text-[11px]">
+                        <div class="flex justify-between"><span>Audiomack</span> <span class="accent-green font-bold">207 FTDs</span></div>
+                        <div class="flex justify-between"><span>LiveScore</span> <span class="accent-green font-bold">45 FTDs</span></div>
+                        <div class="flex justify-between"><span>Flashscore</span> <span class="accent-green font-bold">29 FTDs</span></div>
+                        <div class="flex justify-between"><span>Tubidy Fm</span> <span class="accent-green font-bold">19 FTDs</span></div>
+                    </div>
+                </div>
+                <div class="card p-4 bg-black/40">
+                    <h3 class="text-white font-bold mb-3 border-b border-gray-800 pb-2">Outras [cite: 16]</h3>
+                    <div class="space-y-2 text-[11px]">
+                        <div class="flex justify-between"><span>Flashscore (Moz)</span> <span class="font-bold">2 FTDs</span></div>
+                        <div class="flex justify-between"><span>Audiomack (Nig)</span> <span class="text-red-500 font-bold">1 FTD</span></div>
+                        <div class="flex justify-between italic text-red-900"><span>CPP: 1.563$</span></div>
+                        <div class="flex justify-between"><span>Audiomack (Mal)</span> <span class="font-bold">1 FTD</span></div>
+                    </div>
                 </div>
             </div>
-            <div class="mt-4 p-6 bg-black/50 border border-gray-800 rounded-lg">
-                <p class="text-sm text-gray-400 font-light">
-                    <strong class="text-white">Análise de Potencial:</strong> Ghana e Tanzânia apresentam o maior potencial de escala em volume de FTDs, embora o CPP esteja acima do benchmark. Nigéria e Malawi apresentam custos proibitivos com o setup atual, sugerindo incompatibilidade de inventário ou lances mínimos elevados.
+
+            <div class="bg-red-900/20 border border-red-500/50 p-6 rounded-xl">
+                <h3 class="text-red-500 font-black text-sm uppercase mb-4 flex items-center">
+                    <i class="fas fa-exclamation-circle mr-2 text-xl"></i> Alerta Crítico: Restrições de Inventário 
+                </h3>
+                <p class="text-sm italic leading-relaxed text-gray-200">
+                    As seguintes apps estão <span class="text-white font-bold underline">FECHADAS POR DEALS DIRETOS</span> (Impossibilitando Programática): <br>
+                    <span class="font-bold italic">LiveScore, Audiomack, Block Blast, Tubidy Fm, Flashscore, FotMob, Sofascore.</span>
                 </p>
+                <p class="text-sm mt-3 font-bold text-red-400">SHAREit: Transfer em Blocklist (Clever)[cite: 18].</p>
             </div>
         </section>
 
-        <section id="whitelist" class="mb-12">
-            <div class="flex items-center space-x-3 mb-6">
-                <div class="h-8 w-1 bg-green-500"></div>
-                <h2 class="text-3xl font-bold text-white italic uppercase">4. Inventory Quality (Top 5 Whitelists)</h2>
+        <section class="mb-20 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="card p-8 border-t-4 border-green-500">
+                <h3 class="font-black text-white italic uppercase mb-4">Análise Analítica [cite: 22, 23, 24]</h3>
+                <ul class="space-y-4 text-xs">
+                    <li class="flex items-start"><i class="fas fa-check accent-green mr-3 mt-1"></i> África do Sul é a geografia mais madura; desvio de 11% no target de 40€ é aceitável, mas requer otimização[cite: 23].</li>
+                    <li class="flex items-start"><i class="fas fa-chart-line accent-green mr-3 mt-1"></i> Ghana e Tanzânia têm o maior potencial de escala (alto volume), mas o CPP está significativamente acima dos 5€[cite: 24, 25].</li>
+                </ul>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="card p-6">
-                    <div class="flex justify-between items-center mb-4">
-                        <h3 class="font-black text-white italic uppercase">South Africa</h3>
-                        <i class="fas fa-certificate text-blue-500"></i>
-                    </div>
-                    <ul class="space-y-2 text-sm">
-                        <li class="flex justify-between border-b border-gray-800 pb-1"><span>Block Blast!</span> <span class="font-bold">93 FTDs</span></li>
-                        <li class="flex justify-between border-b border-gray-800 pb-1"><span>ESP - Loadshedding</span> <span class="text-xs italic text-gray-400">Eficiência Extrema</span></li>
-                        <li class="flex justify-between border-b border-gray-800 pb-1"><span>SHAREit: Transfer</span> <span class="text-xs italic">Estável</span></li>
-                        <li class="flex justify-between border-b border-gray-800 pb-1"><span>EskomSePush</span> <span class="text-xs italic">Premium Local</span></li>
-                        <li class="flex justify-between font-bold text-white"><span>Flashscore</span> <span class="text-xs italic text-green-400">Sport Affinity</span></li>
-                    </ul>
-                </div>
-                <div class="card p-6">
-                    <div class="flex justify-between items-center mb-4 text-green-400">
-                        <h3 class="font-black text-white italic uppercase">Ghana</h3>
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <ul class="space-y-2 text-sm">
-                        <li class="flex justify-between border-b border-gray-800 pb-1"><span>Audiomack</span> <span class="font-bold">357 FTDs</span></li>
-                        <li class="flex justify-between border-b border-gray-800 pb-1"><span>Flashscore</span> <span class="text-xs italic">Rácio Excelência</span></li>
-                        <li class="flex justify-between border-b border-gray-800 pb-1"><span>LiveScore</span> <span class="text-xs italic">Core Sport</span></li>
-                        <li class="flex justify-between border-b border-gray-800 pb-1"><span>Sofascore</span> <span class="text-xs italic text-gray-400">Qualidade Sinal</span></li>
-                        <li class="flex justify-between text-white"><span>FotMob</span> <span class="text-xs italic">Nicho Eficiente</span></li>
-                    </ul>
-                </div>
-                <div class="card p-6">
-                    <div class="flex justify-between items-center mb-4">
-                        <h3 class="font-black text-white italic uppercase">Tanzania</h3>
-                        <i class="fas fa-chart-line text-purple-500"></i>
-                    </div>
-                    <ul class="space-y-2 text-sm">
-                        <li class="flex justify-between border-b border-gray-800 pb-1"><span>Audiomack</span> <span class="font-bold">207 FTDs</span></li>
-                        <li class="flex justify-between border-b border-gray-800 pb-1"><span>LiveScore</span> <span class="text-xs italic text-gray-400">CPP Sólido</span></li>
-                        <li class="flex justify-between border-b border-gray-800 pb-1"><span>Flashscore</span> <span class="text-xs italic">Consistente</span></li>
-                        <li class="flex justify-between border-b border-gray-800 pb-1"><span>Tubidy Fm</span> <span class="text-xs italic">Entretenimento</span></li>
-                        <li class="flex justify-between text-white"><span>Tuttocampo</span> <span class="text-xs italic text-blue-400">Emergente</span></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-20 bg-white p-8 rounded-xl text-black">
-            <h2 class="text-2xl font-black uppercase mb-6 italic">Plano de Ação Imediato</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div>
-                    <h4 class="font-bold border-b-2 border-black mb-4 uppercase">Mitigação de Desperdício</h4>
-                    <ul class="space-y-3 font-medium">
-                        <li class="flex items-start"><i class="fas fa-ban mt-1 mr-3"></i> Pausa imediata de Android até confirmação técnica de atribuição.</li>
-                        <li class="flex items-start"><i class="fas fa-filter mt-1 mr-3"></i> Exclusão de apps com CPP > 15€ em mercados de target 5€.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold border-b-2 border-black mb-4 uppercase">Otimização de Performance</h4>
-                    <ul class="space-y-3 font-medium">
-                        <li class="flex items-start"><i class="fas fa-bolt mt-1 mr-3"></i> Ajuste de bidding agressivo em Ghana/Tanzânia para atingir alvos de 5€.</li>
-                        <li class="flex items-start"><i class="fas fa-paint-brush mt-1 mr-3"></i> Novos criativos para África do Sul para reduzir o CPA nos 11% de desvio.</li>
-                    </ul>
-                </div>
+            <div class="card p-8 border-t-4 border-red-600">
+                <h3 class="font-black text-white italic uppercase mb-4">Eficiência Geográfica [cite: 27, 28]</h3>
+                <ul class="space-y-4 text-xs italic">
+                    <li class="flex items-start"><i class="fas fa-times text-red-500 mr-3 mt-1"></i> Nigéria e Malawi apresentam custos proibitivos com o setup atual[cite: 27].</li>
+                    <li class="flex items-start"><i class="fas fa-arrow-right text-gray-500 mr-3 mt-1"></i> Inventário disponível nestas regiões é incompatível com o produto ou o CPP máximo é demasiado baixo[cite: 28].</li>
+                </ul>
             </div>
         </section>
 
     </main>
 
-    <footer class="bg-black p-12 text-center">
-        <div class="text-gray-600 text-xs uppercase tracking-[0.3em]">Confidencial - Betway Africa Internal Report 2025</div>
+    <footer class="p-10 text-center border-t border-gray-800 text-[10px] text-gray-600 uppercase tracking-widest">
+        Confidencial | Betway Internal | 2026
     </footer>
 
     <script>
-        const ctxImp = document.getElementById('impressionChart').getContext('2d');
-        new Chart(ctxImp, {
-            type: 'bar',
+        const ctx = document.getElementById('osChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
             data: {
-                labels: ['South Africa', 'Ghana', 'Tanzania', 'Nigeria', 'Outros'],
+                labels: ['iOS (100% Conversões)', 'Android (0% Conversões)'],
                 datasets: [{
-                    label: 'Impressões (iOS)',
-                    data: [67, 25, 12, 8, 4], // Simulação de escala baseada no texto
-                    backgroundColor: '#00ff5f',
+                    data: [1321, 0.1], // Representação visual baseada em [cite: 9]
+                    backgroundColor: ['#00ff5f', '#440000'],
+                    borderColor: '#0b0b0b',
+                    borderWidth: 4
                 }]
             },
             options: {
                 responsive: true,
-                scales: {
-                    y: { beginAtZero: true, grid: { color: '#222' }, ticks: { color: '#666' } },
-                    x: { grid: { display: false }, ticks: { color: '#fff' } }
-                },
+                maintainAspectRatio: false,
                 plugins: {
-                    legend: { display: false }
+                    legend: { position: 'bottom', labels: { color: '#888', font: { size: 10, family: 'sans-serif' } } }
                 }
             }
         });
