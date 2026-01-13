@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betway Africa 2025 | Programmatic Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .betway-green { color: #00ff5f; }
+        .bg-betway-dark { background-color: #1d1d1d; }
+        .card { background: #2a2a2a; border-radius: 12px; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .status-pill { padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; }
+    </style>
+</head>
+<body class="bg-betway-dark text-white font-sans">
+
+    <nav class="p-6 border-b border-gray-700 flex justify-between items-center sticky top-0 bg-betway-dark z-50">
+        <div class="text-2xl font-bold tracking-tighter">BETWAY <span class="betway-green">AFRICA</span></div>
+        <div class="hidden md:flex space-x-6 text-sm uppercase tracking-widest">
+            <a href="#resumo" class="hover:text-green-400">Resumo</a>
+            <a href="#os-split" class="hover:text-green-400">OS Performance</a>
+            <a href="#geografias" class="hover:text-green-400">Geografias</a>
+            <a href="#apps" class="hover:text-green-400">Top Apps</a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto p-6">
+        
+        <header class="mb-12 py-10">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Relatório Programático 2025</h1>
+            <p class="text-gray-400 max-w-2xl text-lg">Análise detalhada de performance In-App via Kayzen/DV360. Foco em eficiência de custo, atribuição e qualidade de inventário.</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="card p-6 border-l-4 border-green-500">
+                <p class="text-gray-400 text-sm uppercase">Total FTDs (iOS Útil)</p>
+                <h2 class="text-3xl font-bold mt-2">1,321</h2>
+                <p class="text-green-400 text-xs mt-2"><i class="fas fa-arrow-up"></i> Pós-6 de Agosto</p>
+            </div>
+            <div class="card p-6 border-l-4 border-blue-500">
+                <p class="text-gray-400 text-sm uppercase">Investimento Android</p>
+                <h2 class="text-3xl font-bold mt-2">4.311€</h2>
+                <p class="text-red-400 text-xs mt-2"><i class="fas fa-exclamation-triangle"></i> Sem atribuição (Waste)</p>
+            </div>
+            <div class="card p-6 border-l-4 border-yellow-500">
+                <p class="text-gray-400 text-sm uppercase">Principal Mercado</p>
+                <h2 class="text-3xl font-bold mt-2">South Africa</h2>
+                <p class="text-gray-400 text-xs mt-2">CPP: 44.93€ (Target: 40€)</p>
+            </div>
+        </div>
+
+        <section id="os-split" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-mobile-alt mr-3 betway-green"></i> Performance por OS</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <canvas id="osChart" height="250"></canvas>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-green-400">iOS: O Motor de Conversão</h3>
+                        <p class="text-gray-300">Responsável por 100% das conversões rastreadas. Maior eficiência pós-ajuste técnico de Agosto.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-red-500">Android: Atribuição Nula</h3>
+                        <p class="text-gray-300">Investimento ineficiente devido a falhas no tracking da plataforma da marca. Recomendação: Pausa imediata.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="geografias" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-globe-africa mr-3 betway-green"></i> Performance Geográfica (iOS Útil)</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse bg-gray-900 rounded-lg overflow-hidden">
+                    <thead>
+                        <tr class="bg-gray-800 text-gray-300 text-sm uppercase">
+                            <th class="p-4">Geografia</th>
+                            <th class="p-4">Investimento</th>
+                            <th class="p-4">FTDs</th>
+                            <th class="p-4">CPP Atual</th>
+                            <th class="p-4">Target</th>
+                            <th class="p-4">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-300 divide-y divide-gray-800">
+                        <tr>
+                            <td class="p-4 font-bold">South Africa</td>
+                            <td class="p-4">33.379,57€</td>
+                            <td class="p-4">743</td>
+                            <td class="p-4">44,93€</td>
+                            <td class="p-4">40,00€</td>
+                            <td class="p-4"><span class="status-pill bg-yellow-900 text-yellow-200">Ajustar (-11%)</span></td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold text-white">Ghana</td>
+                            <td class="p-4">5.408,55€</td>
+                            <td class="p-4">441</td>
+                            <td class="p-4 font-bold text-red-400">12,26€</td>
+                            <td class="p-4">5,00€</td>
+                            <td class="p-4"><span class="status-pill bg-red-900 text-red-200">Fora do Target</span></td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">Tanzania</td>
+                            <td class="p-4">1.196,53€</td>
+                            <td class="p-4">135</td>
+                            <td class="p-4">8,86€</td>
+                            <td class="p-4">5,00€</td>
+                            <td class="p-4"><span class="status-pill bg-yellow-900 text-yellow-200">Ajustar (-43%)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="apps" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 flex items-center"><i class="fas fa-list-check mr-3 betway-green"></i> Recomendação de Whitelist (Top Apps)</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="card p-5">
+                    <h3 class="text-lg font-bold mb-4 border-b border-gray-700 pb-2">South Africa</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex justify-between"><span>Block Blast!</span> <span class="betway-green font-bold">93 FTDs</span></li>
+                        <li class="flex justify-between"><span>ESP - Loadshedding</span> <span class="text-gray-400 italic text-xs">Alta Relevância</span></li>
+                        <li class="flex justify-between"><span>Flashscore</span> <span class="text-gray-400 italic text-xs">Core Sport</span></li>
+                    </ul>
+                </div>
+                <div class="card p-5">
+                    <h3 class="text-lg font-bold mb-4 border-b border-gray-700 pb-2">Ghana</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex justify-between"><span>Audiomack</span> <span class="betway-green font-bold">357 FTDs</span></li>
+                        <li class="flex justify-between"><span>LiveScore</span> <span class="text-gray-400 italic text-xs">Eficiência High</span></li>
+                        <li class="flex justify-between"><span>FotMob</span> <span class="text-gray-400 italic text-xs">Nicho Qualificado</span></li>
+                    </ul>
+                </div>
+                <div class="card p-5">
+                    <h3 class="text-lg font-bold mb-4 border-b border-gray-700 pb-2">Tanzania</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex justify-between"><span>Audiomack</span> <span class="betway-green font-bold">207 FTDs</span></li>
+                        <li class="flex justify-between"><span>Tubidy Fm</span> <span class="text-gray-400 italic text-xs">Volume</span></li>
+                        <li class="flex justify-between"><span>Tuttocampo</span> <span class="text-gray-400 italic text-xs">Emergente</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-green-900/20 border border-green-500/30 p-8 rounded-xl mb-16">
+            <h2 class="text-2xl font-bold mb-4">Conclusões e Próximos Passos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-gray-300">
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Pausa Imediata:</strong> Suspender investimento Android em todas as geografias até correção técnica.</li>
+                    <li><strong>Otimização de Bidding:</strong> Implementar lances mais agressivos em Ghana/Tanzânia para reduzir CPP para os 5€.</li>
+                </ul>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Foco Criativo:</strong> Desenvolver novos assets para South Africa para baixar o desvio de 11% no CPP.</li>
+                    <li><strong>Clean-up:</strong> Excluir apps com performance histórica superior a 15€ CPP em mercados de baixo custo.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="p-10 text-center text-gray-500 text-sm border-t border-gray-800">
+        © 2026 Betway Africa Programmatic Report | Data Ref: FY 2025
+    </footer>
+
+    <script>
+        // OS Performance Chart
+        const ctx = document.getElementById('osChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['iOS (Conversões)', 'Android (Sem Tracking)'],
+                datasets: [{
+                    data: [1321, 0],
+                    backgroundColor: ['#00ff5f', '#ef4444'],
+                    borderColor: '#1d1d1d',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'bottom', labels: { color: 'white' } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
